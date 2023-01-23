@@ -1,6 +1,6 @@
 import { absoluteValuesSumMinimization } from './absoluteValuesSumMinization';
 
-xdescribe(absoluteValuesSumMinimization.name, () => {
+describe(absoluteValuesSumMinimization.name, () => {
     it('Test 1', () => {
         // arrange
         const data = [2, 4, 7];
@@ -14,7 +14,7 @@ xdescribe(absoluteValuesSumMinimization.name, () => {
 
     it('Test 2', () => {
         // arrange
-        const data = [2, 4, 7, 6];
+        const data = [2, 4, 6, 7];
 
         // act
         const response = absoluteValuesSumMinimization(data);
@@ -25,23 +25,23 @@ xdescribe(absoluteValuesSumMinimization.name, () => {
 
     it('Test 3', () => {
         // arrange
-        const data = [2, 4, 7, 6, 6];
+        const data = [2, 4, 6, 6, 7];
 
         // act
         const response = absoluteValuesSumMinimization(data);
 
         // assert
-        expect(response).toBe(7);
+        expect(response).toBe(6);
     });
 
     it('Test 4', () => {
         // arrange
-        const data = [2, 4, 7, 6, 6, 8];
+        const data = [2, 4, 6, 6, 7, 8];
 
         // act
         const response = absoluteValuesSumMinimization(data);
 
         // assert
-        expect(response).toBe(7);
+        expect(response).toBe(6);
     });
 });
