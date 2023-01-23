@@ -1,9 +1,14 @@
 export function add(param1: number, param2: number): number {
-  return 1;
+  return param1 + param2;
 }
 
 export function add2(...param1: number[]): number {
-  return 1;
+  let sum = 0;
+  param1.forEach((value) => {
+    sum += value;
+  });
+
+  return sum;
 }
 // console.log(add(1, 2));
 // console.log(add(3, 2));

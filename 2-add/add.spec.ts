@@ -18,7 +18,7 @@ describe(add.name, () => {
     });
 });
 
-xdescribe(add2.name, () => {
+describe(add2.name, () => {
     // console.log(add2(2,3));
     it('test 1', () => {
         // arrange
