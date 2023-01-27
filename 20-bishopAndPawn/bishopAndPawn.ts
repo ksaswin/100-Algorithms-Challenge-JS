@@ -4,10 +4,6 @@ export function bishopAndPawn(bishop: string, pawn: string): boolean {
   const bishopPosition = [ columnMarkers[bishop[0]], parseInt(bishop[1]) ];
   const pawnPosition = [ columnMarkers[pawn[0]], parseInt(pawn[1]) ];
 
-  if (bishopPosition[0] === pawnPosition[0] || bishopPosition[1] === pawnPosition[1]) {
-    return false;
-  }
-
   const difference = [ (Math.abs(bishopPosition[0] - pawnPosition[0])), (Math.abs(bishopPosition[1] - pawnPosition[1])) ];
 
   if (difference[0] === difference[1]) {
