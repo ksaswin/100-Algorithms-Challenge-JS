@@ -24,4 +24,17 @@ export function avoidObstacles(inputArray: number[]): number {
   return max + 1;
 }
 
+// export function avoidObstacles(inputArray: number[]): number {
+//   inputArray.sort((a, b) => a-b);
+//   const largestArrayValue = inputArray[inputArray.length - 1];
+//
+//   for (let i=1; i<largestArrayValue; i++) {
+//     if (inputArray.every((element) => element % i !== 0)) {
+//       return i;
+//     }
+//   }
+//
+//   return largestArrayValue + 1;
+// }
+
 // console.log(avoidObstacles([5, 3, 6, 7, 9]));
