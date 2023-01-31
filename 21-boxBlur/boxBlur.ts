@@ -22,7 +22,7 @@ export function boxBlur(image: number[][]): number[][] {
     blur.push(line);
   }
 
-  return blur
+  return blur;
 }
 
 // console.log(boxBlur([[1, 1, 1], 
