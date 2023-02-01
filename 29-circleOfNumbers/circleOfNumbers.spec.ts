@@ -12,4 +12,16 @@ describe(circleOfNumbers.name, () => {
         // assert
         expect(response).toBe(7);
     });
+
+    it('Test 2', () => {
+        // arrange
+        const n = 12;
+        const firstNumber = 1;
+
+        // act
+        const response = circleOfNumbers(n, firstNumber);
+
+        // assert
+        expect(response).toBe(7);
+    });
 });
