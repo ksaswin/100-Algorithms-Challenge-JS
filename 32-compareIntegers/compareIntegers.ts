@@ -1,4 +1,8 @@
 export function compareIntegers(a: string, b: string): string {
+  a = parseInt(a);
+  b = parseInt(b);
+
+  return a === b ? 'equal' : (a < b ? 'less' : 'greater');
 }
 
 // console.log(compareIntegers('12', '13'));
