@@ -1,23 +1,43 @@
-// Second Solution
+// // Another solution
 export function convertString(s: string, t: string): boolean {
-  let index = 0;
+  let word = '';
+  let tIndex = 0;
 
-  if (t.length > s.length) {
-    return false;
-  }
+  for (let i = 0; i < s.length; i++) {
+    if (s[i] === t[tIndex]){
+      word = word.concat(s[i]);
+      tIndex++;
 
-  for (let i = 0; i < t.length; i++) {
-    const indexInS = s.substr(index).indexOf(t[i]);
-
-    if (indexInS === -1) {
-      return false;
-    } else {
-      index += indexInS + 1;
+      if (word === t) {
+        return true;
+      }
     }
   }
 
-  return true;
+  return false;
 }
+
+
+// Second Solution
+// export function convertString(s: string, t: string): boolean {
+//   let index = 0;
+//
+//   if (t.length > s.length) {
+//     return false;
+//   }
+//
+//   for (let i = 0; i < t.length; i++) {
+//     const indexInS = s.substr(index).indexOf(t[i]);
+//
+//     if (indexInS === -1) {
+//       return false;
+//     } else {
+//       index += indexInS + 1;
+//     }
+//   }
+//
+//   return true;
+// }
 
 
 // First Solition
