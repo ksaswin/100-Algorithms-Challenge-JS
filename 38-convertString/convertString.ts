@@ -1,15 +1,38 @@
+// Second Solution
 export function convertString(s: string, t: string): boolean {
   let index = 0;
-  let canConvert = true;
 
-  t.split('').forEach((tChar) => {
-    const indexInS = s.substr(index).indexOf(tChar);
+  if (t.length > s.length) {
+    return false;
+  }
+
+  for (let i = 0; i < t.length; i++) {
+    const indexInS = s.substr(index).indexOf(t[i]);
+
     if (indexInS === -1) {
-      canConvert = false;
+      return false;
     } else {
-      index += (indexInS + 1);
+      index += indexInS + 1;
     }
-  });
+  }
 
-  return canConvert;
+  return true;
 }
+
+
+// First Solition
+// export function convertString(s: string, t: string): boolean {
+//   let index = 0;
+//   let canConvert = true;
+//
+//   t.split('').forEach((tChar) => {
+//     const indexInS = s.substr(index).indexOf(tChar);
+//     if (indexInS === -1) {
+//       canConvert = false;
+//     } else {
+//       index += (indexInS + 1);
+//     }
+//   });
+//
+//   return canConvert;
+// }
