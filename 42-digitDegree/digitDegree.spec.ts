@@ -31,6 +31,6 @@ describe(digitDegree.name, () => {
         const response = digitDegree(n);
 
         // assert 
-        expect(response).toBe(1);
+        expect(response).toBe(2);
     });
 });
