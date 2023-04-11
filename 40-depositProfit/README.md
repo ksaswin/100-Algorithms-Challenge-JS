@@ -12,7 +12,7 @@ Each year the amount of money on your account increases by 20%. It means that th
 - **year 0: 100;**
 - **year 1: 120;**
 - **year 2: 144;**
-- **year 3: 172,8.**
+- **year 3: 172.8;**
 
 Thus, it will take 3 years for your balance to pass the threshold, which is the answer.
 
