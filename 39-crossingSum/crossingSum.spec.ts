@@ -13,6 +13,6 @@ describe(crossingSum.name, () => {
         const response = crossingSum(matrix, a, b);
 
         // assert 
-        expect(response).toBe(true);
+        expect(response).toBe(12);
     });
 });
